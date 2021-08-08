@@ -1,0 +1,14 @@
+.supercharge{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.supercharge .row {
+    margin-top: 50px;
+}
+@media (max-width:575px)
+{
+    .supercharge .col-md-4{
+        margin-bottom: 40px;
+        border-bottom: 1px solid  hsl(201, 11%, 66%);
+    }
+}

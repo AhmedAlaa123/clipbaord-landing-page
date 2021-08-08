@@ -1,0 +1,14 @@
+.access-clipboard{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.access-clipboard img{
+    margin-top: 30px;
+}
+@media (max-width:575px)
+{
+    .access-clipboard{
+        padding-left: 30px ;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,155 @@
+ 
+ /*================================= My Custome Framework =======================*/
+
+:root {
+    --cyan-:hsl(171, 66%, 44%);
+    --lightblue-:hsl(233, 100%, 69%);
+    --darkgrayishblue-:hsl(210, 10%, 33%);
+    --grayishblue-:hsl(201, 11%, 66%);
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    font-family:  'Bai Jamjuree', sans-serif;;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  
+  }
+  .text-center { text-align: center;}
+  h1,.h1,h2,h3{
+    margin-bottom: 30px;
+    color: var(--darkgrayishblue-);
+  }
+  h1,.h1{
+    font-size: 40px;
+  }
+  p {color: var(--grayishblue-); margin-bottom: 30px;}
+  .container {
+    margin: auto;
+  }
+  .justify-content-between{
+    justify-content: space-between;
+  }
+  .col-md-3,.col-md-4,.col-md-2,.col-sm-6,.col-md-7,.col-md-5{ padding-right: 20px; padding-left: 20px; }
+  .col-sm-6 {width: 100%;}
+  .responsive-img{
+    max-width: 100%;
+  }
+  .mb-40{ margin-bottom: 40px;}
+  
+
+  .btn {
+    display: inline-block;
+    background-color:transparent;
+    outline: none;
+    text-decoration: none; /* If Adding to anchore*/
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 20px;
+    cursor: pointer;
+
+  }
+
+  .btn-Cyan {
+      background-color: var(--cyan-);
+     
+      box-shadow:3px 3px 5px  var(--cyan-);
+    }
+ 
+  .btn-Cyan,
+  .btn-light-blue{
+    color: #fff;
+    opacity: 0.9;
+    filter: opacity(90); /* opacity for IE*/
+  }
+  .btn-Cyan:hover,
+  .btn-Cyan:active,
+  .btn-light-blue:hover,
+  .btn-light-blue:active{
+      opacity: 1;
+      filter: opacity(100);
+  }
+  .btn-light-blue {
+      background-color:var(--lightblue-) ;
+      box-shadow:3px 3px 5px  var(--lightblue-) ;
+  }
+  .link {
+      text-decoration: none;
+      color: var(--darkgrayishblue-);
+
+  }
+  .link:hover{
+      text-shadow: 1px 1px 5px var(--lightblue-) ;
+  }
+  /* start grid system */
+  @media (min-width:300px){
+    .container{
+        max-width: 90%;
+    }
+  }
+  @media (max-width:576px)
+  {
+      .btn{
+          display: block;
+      }
+  }
+  @media (min-width:576px){ /*small devics Landscape phones*/
+    
+    .container {
+      max-width: 570px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .col-md-3,.col-md-4,.col-md-2,.col-md-7,.col-md-8,.col-md-5{
+      width: 100%;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }
+  
+  }
+  
+  @media (min-width:768px){/*meduim devices =>tablets*/
+    .container{
+      max-width: 768px;
+    }
+    .col-md-3{
+      width: 25%;
+    }
+    .col-md-4{
+      width:33.333333%;
+    }
+    .col-md-2{
+      width: 20%;
+    }
+    .col-md-7{
+      width: 58.333333331%;
+    }
+    .col-md-8{
+        max-width: 66.66666667%;
+    }
+    .col-md-5{max-width: 41.666666667%;}
+  
+  }
+  @media (min-width:992px){/*desktop devices*/
+    .container{
+        max-width: 960px;
+    }
+  
+  }
+  @media (min-width:1200px){/*Large Screens*/
+    .container{
+        max-width: 1140px;
+    }
+  
+  }
+  /* end grid system */

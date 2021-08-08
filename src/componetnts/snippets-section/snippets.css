@@ -1,0 +1,26 @@
+.snippet-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.image {
+    margin-top: 60px;
+}
+.image img{
+    margin-left: -50px;
+
+}
+
+.snippet-section .snipptes-list{
+    padding-top: 40px;
+}
+@media (max-width:767px) {
+   
+    .image img{
+        margin: auto;
+    }
+    .snippet-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+}

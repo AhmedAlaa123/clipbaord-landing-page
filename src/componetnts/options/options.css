@@ -1,0 +1,29 @@
+.options{
+    width: 160px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    left: -160px;
+    top: 0;
+    background-color: var(--cyan-);
+    color: #fff;
+
+}
+label,input[type='checkbox']{
+    cursor: pointer;
+}
+.options .gear{
+    position: absolute;
+    top: 30px;
+    left: 100%;
+    width: 45px;
+    height: 45px;
+    background-color: var(--cyan-);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0 50% 50% 0;
+    
+}
+.options.open{
+    left: 0;
+}

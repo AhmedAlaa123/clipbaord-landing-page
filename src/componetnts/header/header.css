@@ -1,0 +1,21 @@
+.header
+{
+    background-image: url('../../backgrounds-images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 50px;
+ }
+
+.header img{
+    margin-bottom: 30px;
+}
+
+@media (max-width:567px){ /*small devics Landscape phones*/
+  .header {
+      background-image: url('../../backgrounds-images/bg-header-mobile.png');
+  }
+}

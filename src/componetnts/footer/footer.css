@@ -1,0 +1,36 @@
+footer{
+    padding: 30px  ;
+    border-top: 1px solid var(--grayishblue-);
+    /* background-color: var(--grayishblue-); */
+
+}
+footer img:not(footer .social-icons img){
+    width: 80px;
+    height: 80px;
+    margin:30px;
+}
+footer .social-icons{
+    margin-top: 60px;
+    text-align: right;
+    
+}
+footer .social-icons a{
+    margin: 10px;
+}
+footer .social-icons a:hover img{
+    box-shadow: 0px 0px 10px var(--lightblue-);
+}
+footer .serv{
+    padding-left: 20px;
+}
+@media (max-width:575px)
+{
+    footer .row{
+        display: block;
+        text-align: center ;
+    }
+    footer .social-icons{
+        text-align: center;
+    }
+   
+}
