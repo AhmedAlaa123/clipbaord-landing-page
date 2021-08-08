@@ -1,4 +1,5 @@
 import React from 'react'
+import MAIN_LINK from '../../utlities';
 import './accress-clipboard.css'
 export default function AccessClipboard(props)
 {
@@ -9,7 +10,7 @@ export default function AccessClipboard(props)
                 Whether you're pn the go, or at your computer, you can access  all your Clipboard
                 snippets in a few simple click.
             </p>
-            <img className='responsive-img' src='images/image-devices.png' alt='Devices'/>
+            <img className='responsive-img' src={MAIN_LINK+'images/image-devices.png'} alt='Devices'/>
         </section>
     );
 }

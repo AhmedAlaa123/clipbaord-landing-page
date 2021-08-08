@@ -1,4 +1,5 @@
 import React from 'react'
+import MAIN_LINK from '../../utlities';
 import './snippets.css'
 
 export default function Snippet(props)
@@ -16,7 +17,7 @@ export default function Snippet(props)
             </div>
             <div className='row'>
                 <div className='image col-md-7'>
-                    <img className='responsive-img' src='images/image-computer.png' alt='Computer'/>
+                    <img className='responsive-img' src={MAIN_LINK+'images/image-computer.png'} alt='Computer'/>
                 </div>
                 <div className='snipptes-list col-md-5'>
                     <div className='snippte'>
